@@ -25,8 +25,9 @@ Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container image
 - Next: Add Tags.
 - Next: Configure Security Group.
 - Review and Launch.<br>
-<b> Ready to go </b>
-
+<b> Ready to go </b> <br>
+ [Link to Create Ec2 instance](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html)
+ 
 ![image](https://user-images.githubusercontent.com/63963025/167152381-3eb0b21d-7a17-4f26-894c-d56a10ad29f2.png)
 
 1.2 Connect the machine via ssh 
