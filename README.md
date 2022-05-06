@@ -38,7 +38,7 @@ pip3 install flask
 ```
 ![image](https://user-images.githubusercontent.com/63963025/167089636-89348f79-ff88-4f7e-bb0d-cf12098c785f.png)
 
-run the pyhon application for testing 
+- run the pyhon application for testing 
 ```
 python3 app.py
 ```
@@ -46,6 +46,10 @@ python3 app.py
 
 - open new tab and (curl localhost ip:127.0.0.1:5000)
 ![image](https://user-images.githubusercontent.com/63963025/167090570-5dc43815-d532-49b2-981a-50984811f708.png)
+
+- lets create Dockerfile and append our Flask application and create Dockerimage
+
+same folder /home/cloudshell-user/flask Create Dockerfile
 
 
 
