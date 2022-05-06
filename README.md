@@ -91,3 +91,17 @@ docker build -t flaskapp:v1 .
 ```
 docker build -t flaskapp:v1 /home/ec2-user/flask
 ```
+![image](https://user-images.githubusercontent.com/63963025/167162123-6251818f-8ce2-48b6-bafa-8090080b099c.png)
+
+- install httpd (apache)
+```
+yum install httpd -y
+```
+- Test docker image before uplaoding to ECR 
+```
+ docker run -dit -p 80:1234 flaskapp:v1
+```
+- Go to Security group (chnage firewall rule) edit inbound rules allow custom port number 1234
+![image](https://user-images.githubusercontent.com/63963025/167163063-8f01ba68-d735-4b6a-9ac3-3607cca66eaa.png)
+
+
