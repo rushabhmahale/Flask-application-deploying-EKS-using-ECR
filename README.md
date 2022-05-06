@@ -35,7 +35,9 @@ Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container image
 ```
 sudo su 
 ```
-1.3 Install Docker inside machine 
+1.3 Install Docker inside machine <br>
+ [Link to Installtion Docker in Amazon Linux](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html)
+![image](https://user-images.githubusercontent.com/63963025/167154337-861f9cd4-9178-46cf-83e3-32cdc18f30fe.png)
 
 - create a directory and create app for a flask application 
 ```
@@ -46,22 +48,23 @@ mkdir flask
 cd flask/
 vi app.py
 ```
-![image](https://user-images.githubusercontent.com/63963025/167089349-a55a8525-f3ac-44be-ba99-0b60496e3b62.png)
-
-![image](https://user-images.githubusercontent.com/63963025/167089449-75e3eac9-8468-4cb2-9a83-e35dcb78afdb.png)
+![image](https://user-images.githubusercontent.com/63963025/167156933-c5b7b11b-a6b4-4645-88f0-4a15ecd898bb.png)
+- [Link to app.py file](*)
 ```
 pip3 install flask 
 ```
-![image](https://user-images.githubusercontent.com/63963025/167089636-89348f79-ff88-4f7e-bb0d-cf12098c785f.png)
+![image](https://user-images.githubusercontent.com/63963025/167154877-0781f2dc-149f-48b6-a932-18a833f50e78.png)
 
-- run the pyhon application for testing 
+- run the python application for testing 
 ```
 python3 app.py
 ```
-![image](https://user-images.githubusercontent.com/63963025/167090424-82501564-dcbd-4e58-9a4f-ddd61c7fee3c.png)
+![image](https://user-images.githubusercontent.com/63963025/167158639-d965d2f7-0d25-405d-a70e-8fd947cade1d.png)
+
 
 - open new tab and (curl localhost ip:127.0.0.1:5000)
-![image](https://user-images.githubusercontent.com/63963025/167090570-5dc43815-d532-49b2-981a-50984811f708.png)
+![image](https://user-images.githubusercontent.com/63963025/167158711-86223ad1-2f0e-43f0-be9d-393ccabdefcb.png)
+
 
 - lets create Dockerfile and append our Flask application and create Dockerimage
 
