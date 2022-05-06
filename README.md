@@ -21,3 +21,32 @@ Here i am using AWS Cloud shell (become sudo user)
 ```
 sudo su 
 ```
+- create a directory and create app for a flask application 
+```
+yum update -y 
+```
+```
+mkdir flask
+cd flask/
+vi app.py
+```
+![image](https://user-images.githubusercontent.com/63963025/167089349-a55a8525-f3ac-44be-ba99-0b60496e3b62.png)
+
+![image](https://user-images.githubusercontent.com/63963025/167089449-75e3eac9-8468-4cb2-9a83-e35dcb78afdb.png)
+```
+pip3 install flask 
+```
+![image](https://user-images.githubusercontent.com/63963025/167089636-89348f79-ff88-4f7e-bb0d-cf12098c785f.png)
+
+run the pyhon application for testing 
+```
+python3 app.py
+```
+![image](https://user-images.githubusercontent.com/63963025/167090424-82501564-dcbd-4e58-9a4f-ddd61c7fee3c.png)
+
+- open new tab and (curl localhost ip:127.0.0.1:5000)
+![image](https://user-images.githubusercontent.com/63963025/167090570-5dc43815-d532-49b2-981a-50984811f708.png)
+
+
+
+
