@@ -49,7 +49,7 @@ python3 app.py
 
 - lets create Dockerfile and append our Flask application and create Dockerimage
 
-same folder /home/cloudshell-user/flask Create Dockerfile
+- same folder /home/cloudshell-user/flask Create Dockerfile
 
 
 
