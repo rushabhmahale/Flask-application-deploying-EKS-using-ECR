@@ -16,7 +16,7 @@ Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container image
 - Create manifest for deploying application in EKS (Elastic Kubernetes Service) here the cluster will be private 
 
 ## Steps to be followed:
-- Step1 Create a flask application <br>
+## Step1 Create a flask application <br>
   first we will create Ec2 instance :- 
 - Choose an Amazon Machine Image (AMI)
 - Choose an Instance Type, choose Next: Configure Instance Details.
@@ -81,4 +81,13 @@ python3 app.py
  python3 -m venv flaskpython
  ```
 
-
+## Step2 create Docker Image 
+- current directory 
+```
+docker build -t flaskapp:v1 .
+```
+<b>or</b> <br> 
+- different directory 
+```
+docker build -t flaskapp:v1 /home/ec2-user/flask
+```
