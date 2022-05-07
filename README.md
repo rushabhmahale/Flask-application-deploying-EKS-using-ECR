@@ -48,7 +48,8 @@ mkdir flask
 cd flask/
 vi app.py
 ```
-![image](https://user-images.githubusercontent.com/63963025/167156933-c5b7b11b-a6b4-4645-88f0-4a15ecd898bb.png)
+![image](https://user-images.githubusercontent.com/63963025/167246415-d552ab3e-269e-4906-95c9-9b0434fee7e3.png)
+
 - [Link to app.py file](*)
 ```
 pip3 install flask 
