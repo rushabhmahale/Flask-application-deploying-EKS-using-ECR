@@ -69,12 +69,14 @@ python3 app.py
 
 - lets create Dockerfile and append our Flask application and create Dockerimage <br>
 - [Link to Dockerfile](*) <br>
-![image](https://user-images.githubusercontent.com/63963025/167160362-ca8ff530-0541-410f-96a4-07dddc1ba812.png)
+![image](https://user-images.githubusercontent.com/63963025/167260396-deff0104-d4c0-4457-9433-7f001b477472.png)
+
 
 
 - Also create requirements.txt 
 - [Link to requirements.txt](*) <br>
-![image](https://user-images.githubusercontent.com/63963025/167160154-a09f9344-585a-4d8b-ade6-c50af02c265e.png)
+![image](https://user-images.githubusercontent.com/63963025/167260437-4b2b4098-8873-438b-a41b-01f7950fca5c.png)
+
 
 - Create virtualenv to run flask application
  use this command 
@@ -103,6 +105,6 @@ yum install httpd -y
  docker run -dit -p 80:1234 flaskapp:v1
 ```
 - Go to Security group (chnage firewall rule) edit inbound rules allow custom port number 1234
-![image](https://user-images.githubusercontent.com/63963025/167163063-8f01ba68-d735-4b6a-9ac3-3607cca66eaa.png)
+
 
 
