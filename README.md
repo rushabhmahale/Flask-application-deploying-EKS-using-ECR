@@ -168,8 +168,7 @@ docker run -it -p 8080:8080  flaskapp:v1
 
 - Now run the command of ECR in the Ec2 vm
   ```
-   aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-<given by ECR>.dkr.ecr.ap-south-1
-.amazonaws.com
+   aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-<given by ECR>.dkr.ecr.ap-south-1.amazonaws.com
   ```
   ![image](https://user-images.githubusercontent.com/63963025/167296353-c3f5a5af-89b2-42a6-b9ce-dff9f68d60c9.png)
   
