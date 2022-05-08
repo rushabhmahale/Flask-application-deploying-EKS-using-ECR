@@ -101,10 +101,19 @@ docker build -t flaskapp:v1 /home/ec2-user/flask
 yum install httpd -y
 ```
 - Test docker image before uplaoding to ECR 
+ 
 ```
- docker run -dit -p 80:1234 flaskapp:v1
+docker run -it -p 8080:8080  flaskapp:v1
 ```
-- Go to Security group (chnage firewall rule) edit inbound rules allow custom port number 1234
+![image](https://user-images.githubusercontent.com/63963025/167284670-1574d07f-24e4-4d3c-b84c-3d6ecb128462.png)
 
+- Go to EC2--> Left hand side there is option call--> Security group (change firewall rule) edit inbound rules allow custom port number 8080
+![image](https://user-images.githubusercontent.com/63963025/167284743-9e378802-acca-4350-bfb2-f44c074dab1e.png)
 
+- copy the external ip of your vm and attach port number to external ip eg:- http://<external ip of vm>:8080/ <br>
+  ![image](https://user-images.githubusercontent.com/63963025/167284827-a56ce54f-0ecd-4aed-8466-17441a1300b0.png)
+- paste the ip to your browser with port number 8080 (http://<external ip of vm>:8080/) <br>
+![image](https://user-images.githubusercontent.com/63963025/167284771-d3876e27-19e8-41dc-84b0-c6c18f97ba84.png)
+
+## Step3 
 
