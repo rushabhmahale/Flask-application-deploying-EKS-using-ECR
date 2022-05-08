@@ -129,8 +129,17 @@ docker run -it -p 8080:8080  flaskapp:v1
   
 - Make sure while creating ECR the region must be <b>ap-south1(Mumbai)</b> 
   ![image](https://user-images.githubusercontent.com/63963025/167285109-6d9180db-0ea3-4236-86c9-8e7f5c73eaa8.png)
+  
 - Go to create repository 
   ![image](https://user-images.githubusercontent.com/63963025/167285142-4db6b2ba-3a04-4630-ac6e-fff81cb75c58.png)
   
+- Here we will create private repository no one from outside world should pull our image if there is some confidential image so it is good practice to keep your image in private repository <br> 
+![image](https://user-images.githubusercontent.com/63963025/167285540-e1e77a5d-1283-459f-8746-02c5eb250f94.png)
+  
+- default <br>
+  ![image](https://user-images.githubusercontent.com/63963025/167285558-1cc67518-efee-45c6-94bf-cac8fcaa6cd1.png)
+  
+-   
 
+  
 
