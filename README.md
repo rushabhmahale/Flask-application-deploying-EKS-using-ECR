@@ -147,6 +147,22 @@ docker run -it -p 8080:8080  flaskapp:v1
   ![image](https://user-images.githubusercontent.com/63963025/167285870-eeb90a00-8de9-43b8-aecd-47c5b1f4802f.png)
   
 - Before pushing Docker image to ECR we need to authenticate  go to IAM 
+  ![image](https://user-images.githubusercontent.com/63963025/167286081-57f844c0-cc91-4e9d-9c31-06a821486f25.png)
+- Click on Role here ---> Create Role 
+![image](https://user-images.githubusercontent.com/63963025/167286205-cf55d64b-1c76-40b1-a3c5-215ab944c4a1.png)
+  
+- Click to EC2 what we are doing here we assign the IAM Role to that EC2 instance we have to attach policy to it 
+  ![image](https://user-images.githubusercontent.com/63963025/167286283-93695b63-0750-49f8-ad36-925040ab4449.png)
+  
+- Attach Permissions policies search for container and select <b>AmazonEC2ContainerRegistryFullAccess</b> <br>
+  ![image](https://user-images.githubusercontent.com/63963025/167286312-ed221ba4-f7b4-401f-9853-db56d88a2589.png)
+  
+- Name the role 
+  ![image](https://user-images.githubusercontent.com/63963025/167286389-091d0529-c3ce-4de9-b251-7f614e9cf6e9.png)
+
+- 
+
+
   
   
 
