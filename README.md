@@ -190,7 +190,19 @@ docker run -it -p 8080:8080  flaskapp:v1
   ![image](https://user-images.githubusercontent.com/63963025/167296642-12e81fc6-0cf8-4f77-b73b-85d84fa08c37.png)
 
   ## Step3 Deploy application on EKS(Elastic Kubernetes Service)
-  - Create IAM Role for EKS --> Roles--> Create Role-->
+  - Create IAM Role for EKS --> Roles--> Create Role--> select AWS Service--> Use case -->Use cases for other AWS services: --> select EKS-->EKS - Cluster
+  ![image](https://user-images.githubusercontent.com/63963025/167304814-27e845f3-c330-4405-b96b-34d7fb3c662a.png)
+  ![image](https://user-images.githubusercontent.com/63963025/167304849-e6fc8688-0028-438b-bf13-eb82e3360e2e.png)
+ ![image](https://user-images.githubusercontent.com/63963025/167304938-49022c47-cc30-423c-b93a-56aa5e9cbdd2.png)
+![image](https://user-images.githubusercontent.com/63963025/167304957-4bff03d4-5b93-4490-8bc6-93bc1fe555c0.png)
+![image](https://user-images.githubusercontent.com/63963025/167304964-10cb8fd8-0b2d-41f0-b24c-97e8ed9ec26c.png)
+![image](https://user-images.githubusercontent.com/63963025/167304973-3f6ca7f4-1f9e-4317-90a3-b22c350aea4c.png)
+- Create Role <br>
+  Reffer this:- https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html#create-service-role
+
+- 
+
+
   
   
 
