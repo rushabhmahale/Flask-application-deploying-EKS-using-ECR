@@ -216,8 +216,36 @@ docker run -it -p 8080:8080  flaskapp:v1
 - Control Plane Logging (Default) Create <b>This will take 5-10 mins to create a EKS Cluster be patience</b> 
   ![image](https://user-images.githubusercontent.com/63963025/167305216-0d4a4ba9-423c-4126-8475-643b6ec405f6.png)
 
+Reffer this doc:-https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html
 
+## Step 4 Connect EKS with EC2 
 
+- First we need to install ekctl 
+```
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp  
+```
+```
+sudo mv /tmp/eksctl /usr/local/bin  
+```  
+```
+eksctl version  
+```  
+
+- <b>If you see this kind of error command not found set env variable use this cmd</b>  
+ ```
+export PATH=$PATH:/usr/local/bin/  
+ ```
+![image](https://user-images.githubusercontent.com/63963025/167305682-b432d40a-feda-4c30-b469-4da51b618f7d.png)
+
+- Also install Kubectl<br>
+  Reffer this doc:- https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
+  
+Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
+
+- Go to IAM in Roles select previous Role that we have created <b>EKS-Cluster</b>
+  ![image](https://user-images.githubusercontent.com/63963025/167305912-d537de6e-4688-4f2c-9f61-aeed738a43a8.png)
+
+- Add permission --> Attach policies --> <b>AmazonEKSConnectorAgentRole</b>
   
   
 
