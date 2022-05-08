@@ -4,11 +4,15 @@
 ## Flask:
 Flask is a web framework, it’s a Python module that lets you develop web applications easily. It’s has a small and easy-to-extend core: it’s a microframework that doesn’t include an ORM (Object Relational Manager) or such features.
 
+reffer link:- https://flask.palletsprojects.com/en/2.1.x/
 ## What is EKS(Elastic Kubernetes Service):
 Amazon Elastic Kubernetes Service (Amazon EKS) is a managed Kubernetes service that makes it easy for you to run Kubernetes on AWS and on-premises. Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
 
+reffer link:-  https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html
 ## What is ECR:
 Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container image registry service that is secure, scalable, and reliable. Amazon ECR supports private repositories with resource-based permissions using AWS IAM. This is so that specified users or Amazon EC2 instances can access your container repositories and images.
+
+reffer link:- https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html
 
 ## What we will do:
 - Create a flask application 
@@ -50,7 +54,7 @@ vi app.py
 ```
 ![image](https://user-images.githubusercontent.com/63963025/167246415-d552ab3e-269e-4906-95c9-9b0434fee7e3.png)
 
-- [Link to app.py file](*)
+- [Link to app.py file](https://github.com/rushabhmahale/Flask-application-deploying-EKS-using-ECR/blob/master/main.py)
 ```
 pip3 install flask 
 ```
@@ -68,13 +72,13 @@ python3 app.py
 
 
 - lets create Dockerfile and append our Flask application and create Dockerimage <br>
-- [Link to Dockerfile](*) <br>
+- [Link to Dockerfile](https://github.com/rushabhmahale/Flask-application-deploying-EKS-using-ECR/blob/master/Dockerfile) <br>
 ![image](https://user-images.githubusercontent.com/63963025/167260396-deff0104-d4c0-4457-9433-7f001b477472.png)
 
 
 
 - Also create requirements.txt 
-- [Link to requirements.txt](*) <br>
+- [Link to requirements.txt](https://github.com/rushabhmahale/Flask-application-deploying-EKS-using-ECR/blob/master/requirements.txt) <br>
 ![image](https://user-images.githubusercontent.com/63963025/167260437-4b2b4098-8873-438b-a41b-01f7950fca5c.png)
 
 
@@ -85,7 +89,13 @@ python3 app.py
  ```
 
 ## Step2 create Docker Image 
-- current directory 
+
+## About gunicorn:
+Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy.
+
+refer this:- https://docs.gunicorn.org/en/stable/
+- current directory  here we are using gunicorn 
+
 ```
 docker build -t flaskapp:v1 .
 ```
