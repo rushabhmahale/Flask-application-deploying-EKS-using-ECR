@@ -200,7 +200,22 @@ docker run -it -p 8080:8080  flaskapp:v1
 - Create Role <br>
   Reffer this:- https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html#create-service-role
 
-- 
+- Create Cluster EKS go to Elastic Kubernetes Service
+  ![image](https://user-images.githubusercontent.com/63963025/167305091-c0f144cc-8d57-4ebe-82ee-5e47a1bf9d33.png)
+- Configure Cluster
+  ![image](https://user-images.githubusercontent.com/63963025/167305142-7440c0fb-792e-442f-a93a-72f327b24e07.png)
+![image](https://user-images.githubusercontent.com/63963025/167305146-871fbb39-78d1-46fe-9a73-d4782a868196.png)
+
+- Select vpc default 
+  ![image](https://user-images.githubusercontent.com/63963025/167305155-d0633fd5-30ae-467b-b8ac-a1f8b8815a5b.png)
+
+- Here we will create Private Cluster 
+  ![image](https://user-images.githubusercontent.com/63963025/167305170-d763e0ab-7649-4a65-8548-83edd36b7c66.png)
+![image](https://user-images.githubusercontent.com/63963025/167305178-d4909004-7b25-4fca-b5f9-ad33f0d18e86.png)
+
+- Control Plane Logging (Default) Create <b>This will take 5-10 mins to create a EKS Cluster be patience</b> 
+  ![image](https://user-images.githubusercontent.com/63963025/167305216-0d4a4ba9-423c-4126-8475-643b6ec405f6.png)
+
 
 
   
