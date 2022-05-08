@@ -139,7 +139,14 @@ docker run -it -p 8080:8080  flaskapp:v1
 - default <br>
   ![image](https://user-images.githubusercontent.com/63963025/167285558-1cc67518-efee-45c6-94bf-cac8fcaa6cd1.png)
   
--   
+- Repository created succesfully 
+  ![image](https://user-images.githubusercontent.com/63963025/167285600-faee6fe8-8e7e-4e62-a71f-419a3d5effab.png)
 
+- Now select ECR that you have created there is option called view push command 
+  ![image](https://user-images.githubusercontent.com/63963025/167285753-8dee279e-8b6b-44d5-ba4c-ee92bc622b41.png)
+  ![image](https://user-images.githubusercontent.com/63963025/167285870-eeb90a00-8de9-43b8-aecd-47c5b1f4802f.png)
+  
+- Before pushing Docker image to ECR we need to authenticate  go to IAM 
+  
   
 
