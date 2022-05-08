@@ -115,5 +115,12 @@ docker run -it -p 8080:8080  flaskapp:v1
 - paste the ip to your browser with port number 8080 (http://<external ip of vm>:8080/) <br>
 ![image](https://user-images.githubusercontent.com/63963025/167284771-d3876e27-19e8-41dc-84b0-c6c18f97ba84.png)
 
-## Step3 
+## Step3  Upload the image to ECR 
+  
+- Make sure while creating ECR the region must be <b>ap-south1(Mumbai)</b> 
+  ![image](https://user-images.githubusercontent.com/63963025/167285109-6d9180db-0ea3-4236-86c9-8e7f5c73eaa8.png)
+- Go to create repository 
+  ![image](https://user-images.githubusercontent.com/63963025/167285142-4db6b2ba-3a04-4630-ac6e-fff81cb75c58.png)
+  
+
 
