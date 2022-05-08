@@ -189,6 +189,8 @@ docker run -it -p 8080:8080  flaskapp:v1
  - Here we have pushed image successfully
   ![image](https://user-images.githubusercontent.com/63963025/167296642-12e81fc6-0cf8-4f77-b73b-85d84fa08c37.png)
 
+  ## Step3 Deploy application on EKS(Elastic Kubernetes Service)
+  - Create IAM Role for EKS --> Roles--> Create Role-->
   
   
 
