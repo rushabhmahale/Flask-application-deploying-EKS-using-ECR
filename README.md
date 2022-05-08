@@ -160,8 +160,35 @@ docker run -it -p 8080:8080  flaskapp:v1
 - Name the role 
   ![image](https://user-images.githubusercontent.com/63963025/167286389-091d0529-c3ce-4de9-b251-7f614e9cf6e9.png)
 
-- 
+- Now atatch roles to that Ec2 vm select ec2 vm that you want to attach role go to action --> Security--> Modify IAM role
+  ![image](https://user-images.githubusercontent.com/63963025/167295941-9eeb21ee-ac8b-4475-97cb-c1ac723359ff.png)
 
+- Attach role policies to vm select Docker-EC2-ECR-Role--> Save
+  ![image](https://user-images.githubusercontent.com/63963025/167296087-646eef39-f3cf-491a-97a5-851084c455f6.png)
+
+- Now run the command of ECR in the Ec2 vm
+  ```
+   aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-<given by ECR>.dkr.ecr.ap-south-1
+.amazonaws.com
+  ```
+  ![image](https://user-images.githubusercontent.com/63963025/167296353-c3f5a5af-89b2-42a6-b9ce-dff9f68d60c9.png)
+  
+- Create new version of image same path home/ec2-user/flask 
+ ```
+  docker build -t my-flask-app:v1 .
+ ```
+  ![image](https://user-images.githubusercontent.com/63963025/167296417-1858f112-869f-44bd-bec1-081faacfb7be.png)
+  ![image](https://user-images.githubusercontent.com/63963025/167296433-627ea4d2-a87d-472a-a946-361ac8a1597d.png) 
+
+- Tag Image 
+  ![image](https://user-images.githubusercontent.com/63963025/167296502-bf969cf0-b733-4037-b9a6-0b9e4caa2c81.png)
+
+ - now final step in ECR push the Image in ECR 
+  ![image](https://user-images.githubusercontent.com/63963025/167296557-4032f875-eba0-47e5-b4c2-67312e1ae2d4.png)
+![image](https://user-images.githubusercontent.com/63963025/167296579-9525ad94-10b7-40c9-bea3-a809e988f502.png)
+
+ - Here we have pushed image successfully
+  ![image](https://user-images.githubusercontent.com/63963025/167296642-12e81fc6-0cf8-4f77-b73b-85d84fa08c37.png)
 
   
   
