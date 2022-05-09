@@ -247,13 +247,16 @@ export PATH=$PATH:/usr/local/bin/
   ```
   sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
   ```
-   chmod +x kubectl
+  ```
+  chmod +x kubectl
   mkdir -p ~/.local/bin
   mv ./kubectl ~/.local/bin/kubectl
   ```
+  ```
   kubectl version --client
- 
-  - <b> If you this kind of error bash: /root/bin/kubectl: No such file or directory use this cmd<b>
+```
+  ```
+  - <b> If you this kind of error bash: /root/bin/kubectl: No such file or directory use this cmd</b>
   ```
   cd /usr/local/bin/
   ```
@@ -269,10 +272,6 @@ export PATH=$PATH:/usr/local/bin/
   
 Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 
-- Go to IAM in Roles select previous Role that we have created <b>EKS-Cluster</b>
-  ![image](https://user-images.githubusercontent.com/63963025/167305912-d537de6e-4688-4f2c-9f61-aeed738a43a8.png)
-
-- Add permission --> Attach policies --> <b>AmazonEKSConnectorAgentRole</b>
-  
+- 
   
 
