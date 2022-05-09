@@ -339,6 +339,6 @@ Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 - lets create service 
   ![image](https://user-images.githubusercontent.com/63963025/167469590-d54c956c-47c3-4fe4-8d91-ae0b41f12908.png)
 
-- lets expose our flask application to outside world internet (Ingress)
+- lets expose our flask application to outside world internet (Ingress)<br>
   ![image](https://user-images.githubusercontent.com/63963025/167471451-a9c2776d-9bb7-442c-8a4b-43b48a922897.png)
 
