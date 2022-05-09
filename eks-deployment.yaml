@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eks-flask-deployment
+spec:
+  selector:
+    matchLabels:
+      version: one
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        version: one
+    spec:
+      containers:
+      - name: eks-flask-deployment
+        image: "719531181633.dkr.ecr.ap-south-1.amazonaws.com/my-flask-app:v1"
+        ports:
+        - containerPort: 8080
