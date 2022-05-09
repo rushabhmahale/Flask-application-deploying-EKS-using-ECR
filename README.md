@@ -272,6 +272,14 @@ export PATH=$PATH:/usr/local/bin/
   
 Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 
-- 
+- Install Aws cli in windows or linux (here i am using Windows because there was issue with kubectl in amazon linux)
+  Download :- https://awscli.amazonaws.com/AWSCLIV2.msi
+  ```
+  msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+  ```
+  ```
+  aws --version
+  ```
   
+- Open windows cmd prom
 
