@@ -303,12 +303,17 @@ Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
   ```
   ![image](https://user-images.githubusercontent.com/63963025/167428698-6a307d02-0b7d-4a62-b4d0-01f4cccfa704.png)
   
- - we have created the cluster but if you want to create cluster use this cmd 
+ - we have created the cluster but if you want to create cluster use this cmd  (delete old cluster if you want)
   ```
   eksctl create cluster --name Flask-cluster --node-type t2.medium --managed --region ap-south-1
   ```
 
 - This will take some to deploy cluster (5-10min) <b> Behind the seen in backend they are using cloud formation to create resources</b><br>
   ![image](https://user-images.githubusercontent.com/63963025/167429337-9b55dcc0-2baa-43c5-805f-cfaf7260a7f5.png)
+  
+  ![image](https://user-images.githubusercontent.com/63963025/167454374-5d5a2aab-2676-4f83-a885-fadc8a9b3b4e.png)
 
+
+- You will see this kind of output 
+  ![image](https://user-images.githubusercontent.com/63963025/167433091-47da131c-8dec-4231-b501-89749efdb8c0.png)
 
