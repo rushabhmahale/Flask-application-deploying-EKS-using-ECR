@@ -320,4 +320,8 @@ Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 
 - You will see this kind of output 
   ![image](https://user-images.githubusercontent.com/63963025/167433091-47da131c-8dec-4231-b501-89749efdb8c0.png)
+  
+- Here the cluster is Public now we need to make it private go to Flaskcluster--> Configuration-->Networking--> Manage networking--> Select private
+  ![image](https://user-images.githubusercontent.com/63963025/167457245-8d44add7-320f-4430-b6dc-c52cc569c51f.png)
+
 
