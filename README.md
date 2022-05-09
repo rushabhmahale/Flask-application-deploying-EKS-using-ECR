@@ -280,6 +280,20 @@ Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
   ```
   aws --version
   ```
+- Go to IAM and create user for EKS IAM--> User
+  ![image](https://user-images.githubusercontent.com/63963025/167423827-ef5caf7f-3af3-4fbe-a1ac-b3a054eee418.png)
+
+- Select Accesskey 
+  ![image](https://user-images.githubusercontent.com/63963025/167423989-41107bb5-c75a-416d-8312-d714507f7a09.png)
+
+- It is not good practice to select AdministratorAccess but for now select later on we will delete the permission <b>(In i am we follow least privileges)</b>
+  ![image](https://user-images.githubusercontent.com/63963025/167424544-63d7aa1f-b541-4559-910b-b749e0ab9261.png)
+
+- Next Tag (set as default)  
+- Create user
+- You will see this kind of page <b> Never ever share your access key and Secret key to anyone</b><br>
+  ![image](https://user-images.githubusercontent.com/63963025/167425246-55a8cd26-9bb8-44b6-903f-03bed425dfd2.png)
+
+- Open windows command prompt con
   
-- Open windows cmd prom
 
