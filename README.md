@@ -327,4 +327,16 @@ Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 - This will take several min to setup 
 ## Step 5 Deploy flask application on private EKS cluster
   
- -  
+ - Create deployment file<br>
+  [Link to eks-deployment.yaml file](*)
+ - Create Service file<br> 
+   [Link to eks-service.yaml file](*)
+ - Create Ingress file<br>
+   [Link to eks-ingress.yaml file](*)
+ - Here we have deployed our application succesfully 
+  ![image](https://user-images.githubusercontent.com/63963025/167469090-0328fbe1-8c23-481f-b0b3-ce68c3566a46.png)
+
+- lets expose our flask application to outside world internet 
+  ![image](https://user-images.githubusercontent.com/63963025/167469590-d54c956c-47c3-4fe4-8d91-ae0b41f12908.png)
+
+- 
