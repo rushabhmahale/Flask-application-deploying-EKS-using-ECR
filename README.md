@@ -200,7 +200,7 @@ docker run -it -p 8080:8080  flaskapp:v1
 - Create Role <br>
   Reffer this:- https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html#create-service-role
 
-- Create Cluster EKS go to Elastic Kubernetes Service
+- Create Cluster EKS go to Elastic Kubernetes Service we will also use cli method here the preferable method will be Cli
   ![image](https://user-images.githubusercontent.com/63963025/167305091-c0f144cc-8d57-4ebe-82ee-5e47a1bf9d33.png)
 - Configure Cluster
   ![image](https://user-images.githubusercontent.com/63963025/167305142-7440c0fb-792e-442f-a93a-72f327b24e07.png)
@@ -218,7 +218,7 @@ docker run -it -p 8080:8080  flaskapp:v1
 
 Reffer this doc:-https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html
 
-## Step 4 Connect EKS with EC2 
+## Step 4 Connect EKS with AWS cli 
 
 - First we need to install ekctl 
 ```
@@ -294,6 +294,21 @@ Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 - You will see this kind of page <b> Never ever share your access key and Secret key to anyone</b><br>
   ![image](https://user-images.githubusercontent.com/63963025/167425246-55a8cd26-9bb8-44b6-903f-03bed425dfd2.png)
 
-- Open windows command prompt con
+- Open windows command prompt Config AWS profile
+  ![image](https://user-images.githubusercontent.com/63963025/167428154-95ac6aff-bd37-4d4c-b898-6384144cb17b.png)
+
+- Use this command to verify you are succesfully authenticate or not 
+  ```
+  aws sts get-caller-identity
+  ```
+  ![image](https://user-images.githubusercontent.com/63963025/167428698-6a307d02-0b7d-4a62-b4d0-01f4cccfa704.png)
   
+ - we have created the cluster but if you want to create cluster use this cmd 
+  ```
+  eksctl create cluster --name Flask-cluster --node-type t2.medium --managed --region ap-south-1
+  ```
+
+- This will take some to deploy cluster (5-10min) <b> Behind the seen in backend they are using cloud formation to create resources</b><br>
+  ![image](https://user-images.githubusercontent.com/63963025/167429337-9b55dcc0-2baa-43c5-805f-cfaf7260a7f5.png)
+
 
