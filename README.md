@@ -238,7 +238,34 @@ export PATH=$PATH:/usr/local/bin/
 ![image](https://user-images.githubusercontent.com/63963025/167305682-b432d40a-feda-4c30-b469-4da51b618f7d.png)
 
 - Also install Kubectl<br>
-  Reffer this doc:- https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
+  ```
+  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  ```
+  ```
+  curl -LO https://dl.k8s.io/release/v1.24.0/bin/linux/amd64/kubectl
+  ```
+  ```
+  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+  ```
+   chmod +x kubectl
+  mkdir -p ~/.local/bin
+  mv ./kubectl ~/.local/bin/kubectl
+  ```
+  kubectl version --client
+ 
+  - <b> If you this kind of error bash: /root/bin/kubectl: No such file or directory use this cmd<b>
+  ```
+  cd /usr/local/bin/
+  ```
+  ```
+   mv kubectl /root/bin/
+  export PATH=$PATH:/root/bin/
+  ```
+  - At last Run this command to validate kubectl is install or not 
+  ```
+  kubectl version --client
+  ```
+  Reffer this doc:- https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-binary-with-curl-on-linux
   
 Reffer this Doc:- https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 
