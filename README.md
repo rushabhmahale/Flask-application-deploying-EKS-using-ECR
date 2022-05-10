@@ -19,6 +19,9 @@ reffer link:- https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr
 - Create Dockerfile and push to ECR (Elastic Container Registry)
 - Create manifest for deploying application in EKS (Elastic Kubernetes Service) here the cluster will be private 
 
+## Architecture diagram:- 
+![ECR-EKS drawio](https://user-images.githubusercontent.com/63963025/167547936-14ad9f68-01c6-45a1-a7ef-6bca3780af2e.png)
+
 ## Steps to be followed:
 ## Step1 Create a flask application <br>
   first we will create Ec2 instance :- 
