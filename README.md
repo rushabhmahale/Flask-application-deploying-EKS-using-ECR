@@ -136,7 +136,7 @@ docker run -it -p 8080:8080  flaskapp:v1
 - Go to create repository 
   ![image](https://user-images.githubusercontent.com/63963025/167285142-4db6b2ba-3a04-4630-ac6e-fff81cb75c58.png)
   
-- Here we will create private repository no one from outside world should pull our image if there is some confidential image so it is good practice to keep your image in private repository <br> 
+- Here we will create private repository no one from outside world should pull our image if there is some confidential image so it is good practice to keep your image in Public repository <br> 
 ![image](https://user-images.githubusercontent.com/63963025/167285540-e1e77a5d-1283-459f-8746-02c5eb250f94.png)
   
 - default <br>
